@@ -1,5 +1,5 @@
 import React, {Dispatch} from 'react';
-import {Text, Button, View, StyleSheet, TouchableOpacity} from 'react-native';
+import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
 import {
   increamentCounter,
   decrementCounter,
@@ -22,7 +22,6 @@ type PropsFromRedux = ConnectedProps<typeof connector>;
 
 const CounterComponent = (props: PropsFromRedux) => {
   console.log('Hello world');
-  console.dir(props);
   return (
     <View style={styles.container}>
       <Text style={styles.counterText}>{props.counter}</Text>
